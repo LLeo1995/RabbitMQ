@@ -45,6 +45,7 @@ public class Consumer {
                 System.out.println("consumerTag: " + consumerTag);
                 System.out.println("envelope: " + envelope.getRoutingKey());
                 System.out.println("properties: " + properties);
+                //将接收到的body主体重新包装
                 String bodyMsg = new String(body, "UTF-8");
                 System.out.println("body: " + bodyMsg);
             }
